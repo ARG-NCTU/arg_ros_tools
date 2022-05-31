@@ -53,8 +53,8 @@ docker run \
     -v "/etc/localtime:/etc/localtime:ro" \
     -v "/dev:/dev" \
     -v "/var/run/docker.sock:/var/run/docker.sock" \
-    -v "/home/$USER/arg_navi_tools:/home/arg/arg_navi_tools" \
-    -w "/home/arg/arg_navi_tools" \
+    -v "/home/$USER/arg_ros_tools:/home/arg/arg_ros_tools" \
+    -w "/home/arg/arg_ros_tools" \
     --name argmm \
     --user "root:root" \
     --network host \
