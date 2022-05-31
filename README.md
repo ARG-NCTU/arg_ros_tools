@@ -1,19 +1,19 @@
-# arg_navi_tools
+# arg_ros_tools
 > A toolset for navigation(ex:rosbag) created by arg lab.
 
 
 This file will become your README and also the index of your documentation.
-Website : https://arg-nctu.github.io/arg_navi_tools/
+Website : https://arg-nctu.github.io/arg_ros_tools/
 
 ## Install
 
-`pip install arg_navi_tools`
+`pip install arg_ros_tools`
 
 We can install it locally :(or use this if above command failed)
 
-`git clone git@github.com:ARG-NCTU/arg_navi_tools.git`
+`git clone git@github.com:ARG-NCTU/arg_ros_tools.git`
 
-`cd ~/arg_navi_tools`
+`cd ~/arg_ros_tools`
 
 `pip install -e .`
 
@@ -21,12 +21,12 @@ We can install it locally :(or use this if above command failed)
 
 Fill me in please! Don't forget code examples:
 
-`cd ~/arg_navi_tools`
+`cd ~/arg_ros_tools`
 
 `source Docker/docker_run.sh`
 
-`source jupyter.sh`
+`source Docker/colab_jupyter.sh`
 
-copy URL like http://127.0.0.1:8888/?token=XXXXXXXXXXXXXXXX and put into browser, then you should see local jupyter notebook!
+click ctrl and the url to open browser, then you should see local jupyter notebook!
 
-inside jupyter notebook, click 00_core.ipynp and run all cell
+inside jupyter notebook, click .ipynp and run all cell

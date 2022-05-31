@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: arg_navi_tools
+      title: arg_ros_tools
       url: rosbag_tools.html
     output: web
     title: arg_ros_tools
