@@ -23,9 +23,9 @@ Fill me in please! Don't forget code examples:
 
 `cd ~/arg_ros_tools`
 
-`source Docker/docker_run.sh`
+`source docker_run.sh`
 
-`source Docker/colab_jupyter.sh`
+`source colab_jupyter.sh`
 
 click ctrl and the url to open browser, then you should see local jupyter notebook!
 
