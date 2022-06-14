@@ -1,6 +1,7 @@
 {
   "arg_ros_tools": {
     "Overview": "/",
-    "arg_ros_tools": "play_bag.html"
+    "arg_ros_tools": "play_bag.html",
+    "camera_project": "camera_project.html"
   }
 }
