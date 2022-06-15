@@ -29,6 +29,12 @@ nb_path: "02_camera_project.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="import-dependency">import dependency<a class="anchor-link" href="#import-dependency"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -67,6 +73,12 @@ nb_path: "02_camera_project.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="get-cam_matrix-and-dist_coeffs-from-calibration_file">get cam_matrix and dist_coeffs from calibration_file<a class="anchor-link" href="#get-cam_matrix-and-dist_coeffs-from-calibration_file"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -120,6 +132,12 @@ nb_path: "02_camera_project.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="first-step-to-detect-apriltag">first step to detect apriltag<a class="anchor-link" href="#first-step-to-detect-apriltag"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -194,6 +212,12 @@ id: 204, center: [571.55414734 525.64828262]
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="get-the-big-bounding-box">get the big bounding box<a class="anchor-link" href="#get-the-big-bounding-box"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -273,6 +297,12 @@ id: 204, center: [571.55414734 525.64828262]
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="solvePNP-to-get-r_vec-and-t_vec-for-projection">solvePNP to get r_vec and t_vec for projection<a class="anchor-link" href="#solvePNP-to-get-r_vec-and-t_vec-for-projection"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -386,6 +416,12 @@ id: 204, center: [571.55414734 525.64828262]
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="give-a-z-value-and-project-the-points">give a z value and project the points<a class="anchor-link" href="#give-a-z-value-and-project-the-points"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -423,8 +459,6 @@ id: 204, center: [571.55414734 525.64828262]
 <span class="n">proj_img_c_up</span><span class="p">,</span> <span class="n">jac</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">projectPoints</span><span class="p">(</span>
     <span class="n">c_pts</span><span class="p">,</span> <span class="n">r_vec</span><span class="p">,</span> <span class="n">t_vec</span><span class="p">,</span> <span class="n">cam_matrix</span><span class="p">,</span> <span class="n">dist_coeffs</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">cuboid_pts</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">obj2_pts</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">c_pts</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">proj_img_pts</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">proj_img_c_up</span><span class="p">)</span>
@@ -440,26 +474,7 @@ id: 204, center: [571.55414734 525.64828262]
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[[-0.2 -0.2  0. ]]
-
- [[ 0.2 -0.2  0. ]]
-
- [[ 0.2  0.2  0. ]]
-
- [[-0.2  0.2  0. ]]
-
- [[-0.2 -0.2 -0.4]]
-
- [[ 0.2 -0.2 -0.4]]
-
- [[ 0.2  0.2 -0.4]]
-
- [[-0.2  0.2 -0.4]]]
-[[-0.2 -0.2  0.3]
- [ 0.2 -0.2  0.3]
- [ 0.2  0.2  0.3]
- [-0.2  0.2  0.3]]
-[[0.  0.  0. ]
+<pre>[[0.  0.  0. ]
  [0.  0.  0.8]]
 [[[494.55851541 505.27843252]]
 
@@ -481,6 +496,12 @@ id: 204, center: [571.55414734 525.64828262]
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="visualize-the-points">visualize the points<a class="anchor-link" href="#visualize-the-points"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -549,6 +570,12 @@ id: 204, center: [571.55414734 525.64828262]
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="visualize-the-landing-block-for-the-UAV">visualize the landing block for the UAV<a class="anchor-link" href="#visualize-the-landing-block-for-the-UAV"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
