@@ -2,9 +2,7 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"arg_bag_extracter": "00_rosbag_tools.ipynb",
-         "vis_apriltag": "02_camera_project.ipynb",
-         "detect_apriltag": "02_camera_project.ipynb"}
+index = {"arg_bag_extracter": "00_rosbag_tools.ipynb"}
 
 modules = ["rosbag_tools.py",
            "camera_project.py"]
