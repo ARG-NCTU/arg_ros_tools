@@ -146,7 +146,8 @@ RUN pip3 install \
     flask \
     jupyter \
     jupyter_http_over_ws \
-    flask-socketio 
+    flask-socketio \
+    twine
 
 RUN jupyter serverextension enable --py jupyter_http_over_ws
 
