@@ -31,7 +31,8 @@ conda_release:
 	fastrelease_conda_package
 
 pypi: dist
-	twine upload --repository pypi dist/*
+	#twine upload --repository pypi dist/*
+	twine upload --skip-existing --repository pypi dist/*
 
 dist: clean
 	python3 setup.py sdist bdist_wheel
