@@ -22,9 +22,9 @@ from cv_bridge import CvBridge
 
 class arg_bag_extracter:
     def __init__(self, bag_file, output_dir, image_topic, depth_topic): 
-        self.bag_file = "data/"+bag_file
+        self.bag_file = bag_file
         self.bag = rosbag.Bag(self.bag_file, "r")
-        self.output_dir = "data/"+output_dir
+        self.output_dir = output_dir
         self.image_topic = image_topic
         self.depth_topic = depth_topic
         plt.rcParams['figure.figsize'] = (40, 40)        # large images
@@ -46,8 +46,8 @@ class arg_bag_extracter:
         return
     
     def detect_apriltag(self):
-        img_path = "data/"+'extract/rgb/color000003.png'
-        depth_path = "data/"+'extract/depth/depth000003.png'
+        img_path = 'extract/rgb/color000003.png'
+        depth_path = 'extract/depth/depth000003.png'
         img = cv2.imread(img_path)
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         depth = cv2.imread(depth_path, -cv2.IMREAD_ANYDEPTH)
@@ -74,8 +74,8 @@ class arg_bag_extracter:
         return
     
     def detect_near_object(self):
-        img_path = "data/"+'extract/rgb/color000046.png'
-        depth_path = "data/"+'extract/depth/depth000046.png'
+        img_path = 'extract/rgb/color000046.png'
+        depth_path = 'extract/depth/depth000046.png'
         img = cv2.imread(img_path)
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         depth = cv2.imread(depth_path, -cv2.IMREAD_ANYDEPTH)
@@ -110,8 +110,8 @@ class arg_bag_extracter:
         return
     
     def detect_color_block(self):
-        img_path = "data/"+'extract/rgb/color000046.png'
-        depth_path = "data/"+'extract/depth/depth000046.png'
+        img_path = 'extract/rgb/color000046.png'
+        depth_path = 'extract/depth/depth000046.png'
         img = cv2.imread(img_path)
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         depth = cv2.imread(depth_path, -cv2.IMREAD_ANYDEPTH)
