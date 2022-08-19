@@ -5,10 +5,10 @@ SRC = $(wildcard ./*.ipynb)
 all: arg_ros_tools docs
 
 clean:
-	nbdev_clean_nbs
+	nbdev_clean
 
 arg_ros_tools: $(SRC)
-	nbdev_build_lib
+	nbdev_export
 	touch arg_ros_tools
 
 sync:
@@ -18,7 +18,7 @@ docs_serve: docs
 	cd docs && bundle exec jekyll serve
 
 docs: $(SRC)
-	nbdev_build_docs
+	nbdev_docs
 	touch docs
 
 test:
